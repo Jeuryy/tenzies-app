@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 export default function Stopwatch(props){
     const time = props.time;
     useEffect(() =>{
-        const $button = document.querySelector(".won")
         let interval;
         if (!props.tenzies) {
             interval = setInterval(() => {
